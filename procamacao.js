@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const cards = document.querySelectorAll(".dia-card");
 
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries)=>{
 
-        entries.forEach((entry) => {
+        entries.forEach(entry=>{
 
             if(entry.isIntersecting){
 
@@ -14,12 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
 
-    }, {
-        threshold: 0.15
     });
 
-    cards.forEach((card) => {
-        observer.observe(card);
-    });
+    cards.forEach(card => observer.observe(card));
 
 });
