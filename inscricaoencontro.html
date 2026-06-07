@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Inscrição - Encontro com Deus</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+<img src="assets/logo.png" alt="Primeira IEQ">
+
+<span>Primeira IEQ</span>
+
+</div>
+
+<nav>
+
+<a href="index.html">Início</a>
+
+<a href="eventos.html">Eventos</a>
+
+<a href="contato.html">Contato</a>
+
+</nav>
+
+</header>
+
+<section class="page-hero">
+
+<h1>Encontro com Deus</h1>
+
+<p>
+Preencha sua inscrição e reserve sua vaga.
+</p>
+
+</section>
+
+<section class="form-section">
+
+<div class="form-card">
+
+<h2>Ficha de Inscrição</h2>
+
+<form id="encontroForm">
+
+<input
+type="text"
+placeholder="Nome Completo"
+required>
+
+<input
+type="text"
+placeholder="CPF"
+required>
+
+<input
+type="text"
+placeholder="RG">
+
+<input
+type="date"
+required>
+
+<input
+type="text"
+placeholder="Endereço Completo"
+required>
+
+<input
+type="text"
+placeholder="Cidade"
+required>
+
+<input
+type="text"
+placeholder="Bairro"
+required>
+
+<input
+type="tel"
+placeholder="Telefone"
+required>
+
+<input
+type="tel"
+placeholder="WhatsApp"
+required>
+
+<select required>
+
+<option value="">
+Selecione o Encontro
+</option>
+
+<option>
+Encontro de Homens
+</option>
+
+<option>
+Encontro de Mulheres
+</option>
+
+</select>
+
+<select required>
+
+<option value="">
+É membro da igreja?
+</option>
+
+<option>
+Sim
+</option>
+
+<option>
+Não
+</option>
+
+</select>
+
+<input
+type="text"
+placeholder="Qual igreja você frequenta?">
+
+<hr>
+
+<h3>Contato de Emergência</h3>
+
+<input
+type="text"
+placeholder="Nome do Responsável"
+required>
+
+<input
+type="tel"
+placeholder="Telefone do Responsável"
+required>
+
+<input
+type="text"
+placeholder="Grau de Parentesco">
+
+<hr>
+
+<h3>Informações Médicas</h3>
+
+<textarea
+placeholder="Possui alergias? Se sim, quais?">
+</textarea>
+
+<textarea
+placeholder="Faz uso de medicamentos contínuos?">
+</textarea>
+
+<textarea
+placeholder="Possui alguma restrição alimentar?">
+</textarea>
+
+<hr>
+
+<h3>Informações Espirituais</h3>
+
+<select>
+
+<option>
+Já participou de um Encontro com Deus?
+</option>
+
+<option>
+Sim
+</option>
+
+<option>
+Não
+</option>
+
+</select>
+
+<select>
+
+<option>
+Já foi batizado?
+</option>
+
+<option>
+Sim
+</option>
+
+<option>
+Não
+</option>
+
+</select>
+
+<textarea
+placeholder="Deseja compartilhar algum pedido especial para oração?">
+</textarea>
+
+<hr>
+
+<label class="checkbox">
+
+<input type="checkbox" required>
+
+Declaro que as informações prestadas são verdadeiras.
+
+</label>
+
+<label class="checkbox">
+
+<input type="checkbox" required>
+
+Autorizo o uso de minha imagem em fotos e vídeos do evento.
+
+</label>
+
+<button type="submit">
+
+Finalizar Inscrição
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Primeira IEQ Reserva</h3>
+
+<p>
+Rua Pastor Gregório Szeremeta, 104
+</p>
+
+<p>
+Reserva - Paraná
+</p>
+
+</footer>
+
+<script>
+
+document
+.getElementById("encontroForm")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+alert(
+"Inscrição enviada com sucesso! Em breve entraremos em contato."
+);
+
+this.reset();
+
+});
+
+</script>
+
+</body>
+
+</html>
